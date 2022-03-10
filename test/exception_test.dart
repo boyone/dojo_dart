@@ -2,7 +2,7 @@ import 'package:test/test.dart';
 
 void main() {
   group('exception test with predefined matcher', () {
-    test('exception', () {
+    tetst('exception', () {
       expect(() => exceptionFunc(), throwsException);
       expect(() => formatExceptionFunc(), throwsException);
     });
@@ -61,3 +61,9 @@ exceptionFunc() {
 reallyUnknownException() {
   throw 'unknown error';
 }
+
+
+
+
+// https://api.flutter.dev/flutter/package-test_api_expect/throwsA.html
+// https://api.flutter.dev/flutter/package-matcher_matcher/TypeMatcher-class.html
