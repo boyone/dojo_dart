@@ -1,3 +1,4 @@
+import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 import "package:collection/collection.dart";
 
@@ -11,6 +12,6 @@ main() {
 
     var newMap = groupBy(data, (Map obj) => obj['release_date']);
 
-    print(newMap);
+    expect(newMap.length, 2);
   });
 }
