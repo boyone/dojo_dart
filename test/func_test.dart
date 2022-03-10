@@ -2,7 +2,7 @@ import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
 void main() {
-  test('pass function', () {
+  test('pass function as arguments', () {
     var keeper = Keeper(10);
     var teller = Teller(keeper.subtract);
 

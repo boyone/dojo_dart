@@ -2,24 +2,24 @@ import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
 void main() {
-  test('passing class', () {
+  test('passing class to function', () {
     var f = Foo(10);
-    inner1(f);
-    expect(f.x, 20);
-    inner2(f);
-    expect(f.x, 20);
+    assignValueToNumber(f);
+    expect(f.number, 20);
+    assignNewInstance(f);
+    expect(f.number, 20);
   });
 }
 
 class Foo {
-  int x;
-  Foo(this.x);
+  int number;
+  Foo(this.number);
 }
 
-void inner1(Foo f) {
-  f.x = 20;
+void assignValueToNumber(Foo f) {
+  f.number = 20;
 }
 
-void inner2(Foo f) {
+void assignNewInstance(Foo f) {
   f = Foo(30);
 }
