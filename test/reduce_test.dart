@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
 
 void main() {
-  test('map reduct', () {
+  test('map reduce', () {
     var items = [Item(1, 20), Item(2, 30)];
     var actual = items.map((e) => e.qty * e.price).reduce((value, element) => value + element);
     expect(actual, 80);
