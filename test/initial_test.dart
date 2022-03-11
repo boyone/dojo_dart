@@ -1,4 +1,3 @@
-import 'package:test/scaffolding.dart';
 import 'package:test/test.dart';
 
 void main() {

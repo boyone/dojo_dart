@@ -2,7 +2,7 @@ import 'package:test/test.dart';
 
 void main() {
   group('exception test with predefined matcher', () {
-    tetst('exception', () {
+    test('exception', () {
       expect(() => exceptionFunc(), throwsException);
       expect(() => formatExceptionFunc(), throwsException);
     });
