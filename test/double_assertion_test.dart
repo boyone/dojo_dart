@@ -14,3 +14,5 @@ void main() {
     expect(1000.00.toStringAsFixed(2), equals('1000.00'));
   });
 }
+
+// Ref: https://api.dart.dev/stable/2.16.1/dart-core/double-class.html
