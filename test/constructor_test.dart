@@ -77,17 +77,17 @@ class Logger {
   static final Map<String, Logger> _cache = <String, Logger>{};
 
   factory Logger(String name) {
-    print('factory');
+    // print('factory');
     return _cache.putIfAbsent(name, () => Logger._internal(name));
   }
 
   factory Logger.fromJson(Map<String, Object> json) {
-    print('fromJson');
+    // print('fromJson');
     return Logger(json['name'].toString());
   }
 
   Logger._internal(this.name) {
-    print('internal');
+    // print('internal');
   }
 
   void log(String msg) {
